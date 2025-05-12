@@ -22,7 +22,7 @@
     "@nextcloud/dialogs": "^4.2.5",
     "@nextcloud/router": "^3.0.0",
     "@nextcloud/vue": "^8.11.2",
-    "@nextcloud/vue-richtext": "^2.1.0",
+    "@nextcloud/vue-richtext": "^1.0.0",
     "@tiptap/extension-image": "^2.12.0",
     "@tiptap/starter-kit": "^2.12.0",
     "@tiptap/vue-2": "^2.12.0",
@@ -40,6 +40,6 @@
     "eslint-webpack-plugin": "^4.1.0",
     "stylelint-webpack-plugin": "^5.0.0",
     "sass": "^1.72.0",
-    "sass-loader": "^10.5.2"
+    "sass-loader": "^16.0.5"
   }
 }
