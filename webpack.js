@@ -4,7 +4,14 @@ const StyleLintPlugin = require('stylelint-webpack-plugin')
 const path = require('path')
 
 webpackConfig.entry = {
-	main: { import: path.join(__dirname, 'src', 'main.js'), filename: 'main.js' },
+	main: path.join(__dirname, 'src', 'main.js'),
+}
+
+webpackConfig.output = {
+	path: path.resolve(__dirname, './js'),
+	publicPath: '/js/',
+	filename: '[name].js',
+	chunkFilename: 'chunks/[name]-[hash].js'
 }
 
 webpackConfig.plugins.push(
