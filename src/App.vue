@@ -4,7 +4,10 @@
 			<div v-if="!selectedMap" class="mindmap-list">
 				<div class="header">
 					<h2>Mind Maps</h2>
-					<NcButton @click="createNewMap" type="primary">
+					<NcButton
+						type="primary"
+						@click="createNewMap"
+					>
 						<template #icon>
 							<Plus :size="20" />
 						</template>
@@ -18,8 +21,15 @@
 				</div>
 				
 				<div v-else-if="mindMaps.length === 0" class="empty-state">
-					<p>You don't have any mind maps yet.</p>
-					<NcButton @click="createNewMap" type="primary">Create your first mind map</NcButton>
+					<p>
+						You don't have any mind maps yet.
+					</p>
+					<NcButton
+						type="primary"
+						@click="createNewMap"
+					>
+						Create your first mind map
+					</NcButton>
 				</div>
 				
 				<div v-else class="map-grid">
@@ -34,7 +44,11 @@
 							<p class="meta">Last updated: {{ formatDate(map.updatedAt) }}</p>
 						</div>
 						<div class="map-card-actions">
-							<NcButton @click.stop="deleteMindMap(map.name)" type="tertiary" title="Delete">
+							<NcButton
+								type="tertiary"
+								title="Delete"
+								@click.stop="deleteMindMap(map.name)"
+							>
 								<template #icon>
 									<Delete :size="20" />
 								</template>
@@ -46,7 +60,10 @@
 			
 			<div v-else class="mind-map-view">
 				<div class="mind-map-header">
-					<NcButton @click="goBack" type="tertiary">
+					<NcButton
+						type="tertiary"
+						@click="goBack"
+					>
 						<template #icon>
 							<ArrowLeft :size="20" />
 						</template>
