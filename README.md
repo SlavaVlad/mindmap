@@ -24,7 +24,7 @@ A Nextcloud application that provides a collaborative infinite canvas for mindma
 1. Clone the repository into your Nextcloud apps directory:
    ```bash
    cd /path/to/nextcloud/apps/
-   git clone https://github.com/yourusername/mindmap.git
+   git clone https://github.com/SlavaVlad/mindmap.git
    cd mindmap
    ```
 
