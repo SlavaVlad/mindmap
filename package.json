@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "AGPL-3.0-or-later",
   "engines": {
-    "node": "^16.0.0",
-    "npm": "^9.0.0"
+    "node": "^20.0.0",
+    "npm": "^10.0.0"
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --config webpack.js --progress",
@@ -21,7 +21,7 @@
     "@nextcloud/axios": "^2.4.0",
     "@nextcloud/dialogs": "^4.2.5",
     "@nextcloud/router": "^3.0.0",
-    "@nextcloud/vue": "^7.12.8",
+    "@nextcloud/vue": "^8.0.0",
     "@tiptap/extension-image": "^2.12.0",
     "@tiptap/starter-kit": "^2.12.0",
     "@tiptap/vue-2": "^2.12.0",
@@ -32,13 +32,28 @@
     "yjs": "^13.6.26"
   },
   "devDependencies": {
-    "@nextcloud/browserslist-config": "^3.0.1",
+    "@nextcloud/babel-config": "^2.0.0",
+    "@nextcloud/browserslist-config": "^3.0.0",
     "@nextcloud/eslint-config": "^8.3.0",
     "@nextcloud/stylelint-config": "^2.4.0",
-    "@nextcloud/webpack-vue-config": "^6.0.1",
+    "@nextcloud/webpack-vue-config": "^7.0.0",
     "eslint-webpack-plugin": "^4.1.0",
     "stylelint-webpack-plugin": "^5.0.0",
     "sass": "^1.72.0",
-    "sass-loader": "^16.0.5"
+    "sass-loader": "^14.1.1"
+  },
+  "overrides": {
+    "@nextcloud/vue": {
+      "node": "^20.0.0",
+      "npm": "^10.0.0"
+    },
+    "@nextcloud/dialogs": {
+      "node": "^20.0.0",
+      "npm": "^10.0.0"
+    },
+    "@nextcloud/router": {
+      "node": "^20.0.0",
+      "npm": "^10.0.0"
+    }
   }
 }
