@@ -22,7 +22,6 @@
     "@nextcloud/dialogs": "^4.2.5",
     "@nextcloud/router": "^3.0.0",
     "@nextcloud/vue": "^8.11.2",
-    "@nextcloud/vue-richtext": "^1.0.0",
     "@tiptap/extension-image": "^2.12.0",
     "@tiptap/starter-kit": "^2.12.0",
     "@tiptap/vue-2": "^2.12.0",
