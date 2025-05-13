@@ -7,9 +7,9 @@
     "npm": ">=10.0.0"
   },
   "scripts": {
-    "build": "NODE_ENV=production npx webpack --config webpack.js --progress",
-    "dev": "NODE_ENV=development npx webpack --config webpack.js --progress",
-    "watch": "NODE_ENV=development npx webpack --config webpack.js --progress --watch",
+    "build": "NODE_ENV=production webpack --config webpack.js --progress",
+    "dev": "NODE_ENV=development webpack --config webpack.js --progress",
+    "watch": "NODE_ENV=development webpack --config webpack.js --progress --watch",
     "lint": "eslint src",
     "stylelint": "stylelint src/**/*.vue src/**/*.scss src/**/*.css",
     "lint:fix": "eslint src --fix"
