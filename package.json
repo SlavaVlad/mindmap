@@ -7,9 +7,9 @@
     "npm": ">=10.0.0"
   },
   "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack.js --progress",
-    "dev": "NODE_ENV=development webpack --config webpack.js --progress",
-    "watch": "NODE_ENV=development webpack --config webpack.js --progress --watch",
+    "build": "NODE_ENV=production npx webpack --config webpack.js --progress",
+    "dev": "NODE_ENV=development npx webpack --config webpack.js --progress",
+    "watch": "NODE_ENV=development npx webpack --config webpack.js --progress --watch",
     "lint": "eslint src",
     "stylelint": "stylelint src/**/*.vue src/**/*.scss src/**/*.css",
     "lint:fix": "eslint src --fix"
@@ -40,7 +40,9 @@
     "eslint-webpack-plugin": "^4.1.0",
     "stylelint-webpack-plugin": "^5.0.0",
     "sass": "^1.72.0",
-    "sass-loader": "^16.0.5"
+    "sass-loader": "^16.0.5",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "overrides": {
     "@nextcloud/vue": {
